@@ -1,0 +1,69 @@
+.upload-content-container{
+    /* border: 1px solid black; */
+    width: 100%;
+    color: rgb(88, 88, 88);
+}
+.upload-form-content{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.upload{
+    padding: 50px;
+    /* border: 1px solid rgb(186, 186, 186);
+    border-radius: 3px; */
+    margin: 10px;
+}
+.upload-container{
+    width: auto;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.upload-documet-from-upload{
+    background: none;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 4px;
+    background-color: #2f9eff;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.upload-documet-from-upload:hover{
+    background-color:  #2382d5;
+    transition: all 0.3s ease;
+}
+
+/* urinalysis done upload class */
+.done-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.done-upload-xray{
+    background-image: url('../images/done1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+
+.done-upload-cbc{
+    background-image: url('../images/done2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+
+.done-upload-urinalysis{
+    background-image: url('../images/done3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}

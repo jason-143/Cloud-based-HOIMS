@@ -1,0 +1,51 @@
+
+.employee-form-content{
+    overflow-x: auto;
+    width: 100%;
+}
+.member-list{
+    /* border: 1px solid black; */
+    padding: 50px;
+    margin: 10px;
+    overflow-y: auto;
+}
+
+table{
+    /* border: 1px solid black; */
+    width: 100%;
+    border-collapse: collapse;
+    /* border-collapse: separate; */
+}
+th, td{
+    /* border: 1px solid black; */
+    padding: 20px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+}
+td{
+    max-width: 300px;
+    overflow-x:auto;
+}
+
+@media all and (max-width: 800px){
+    th{
+        display: none;
+    }
+    td{
+        padding: 20px;
+        display: block;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+    }
+    th {
+        text-align: center;
+    }
+    td::before{
+        content: attr(data-cell);
+        font-weight: bold;
+    }
+    .member-list{
+        /* border: 1px solid black; */
+        padding: 5px;
+    }
+}

@@ -1,0 +1,183 @@
+/* :root {
+    --input-border:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    --input-box-sizing: border-box;
+} */
+
+/* * {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+} */
+
+.main-body-holder {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+/* .main-header {
+    position: sticky;
+    top: 30px;
+    left: 0;
+    box-sizing: border-box;
+    height: 90vh;
+    border: 1px solid rgb(186, 186, 186);
+    border-right: 1px solid rgb(186, 186, 186);
+    width: 250px;
+} */
+
+.main-body-content{
+    /* border: 1px solid rgb(5, 255, 34); */
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-body-content::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.form-content {
+    position: relative;
+    height: auto;
+    padding-top: 50px;
+    width: 100%;
+    /* top: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-bottom: 70px;
+    overflow-x: auto;
+}
+
+.top-form-content{
+    width: 100%;
+    /* border: 1px solid black;  */
+    align-items: center;
+}
+.button-container{
+    padding: 10px;
+}
+
+.edit-button {
+    position: relative;
+    padding: 5px;
+    
+    width: 100px;
+    background-color: rgb(47, 158, 255);
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 3px;
+    color: aliceblue;
+}
+
+#submit-add-employee{
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(47, 158, 255);
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 3px;
+    color: aliceblue;
+}
+#submit-add-employee:hover{
+    background-color: rgb(0, 114, 214);
+}
+
+.edit-button:hover {
+    background-color: rgb(0, 114, 214);
+}
+.save-edit{
+    display: none;
+}
+
+/* title text input */
+#my-account {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.title-input {
+    padding-left: 50px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.input-title-top-container {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(119, 113, 113);
+}
+
+/* User Information */
+.user-information {
+    /* border: 1px solid black; */
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.user {
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: auto;
+}
+
+.in-put {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+/* contact information */
+.contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+/* abbout information */
+.about-information {
+    padding-left: 40px;
+    width: auto;
+}
+
+#textarea-about-me {
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+@media all and (max-width: 900px) {
+    .main-header {
+        display: none;
+    }
+    /* text title */
+    .title-input {
+        padding-left: 10px;
+    }
+    .user-information {
+        /* border: 1px solid black; */
+        position: relative;
+        display: contents;
+    }
+    .form-content {
+        position: relative;
+        height: auto;
+        top: 100px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+}

@@ -1,0 +1,165 @@
+/* 
+    CLoud-based Health Office Management Information System with.... email notification and 
+
+    transisiton = 0.4s ease-in-out
+*/
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+/* Width and color for the track (the area where the thumb moves) */
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+/* Width and color for the corners of the scrollbar */
+::-webkit-scrollbar-corner {
+    background-color: #ffffff;
+}
+/* Some basic styling for the layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* background: linear-gradient(to right, #d8feff, #ffffff); */
+    /* backdrop-filter: blur(10px); */
+}
+
+aside {
+    position: sticky;
+    left: 10px;
+    top: 10px;
+    /* border-right: 1px solid rgb(186, 186, 186);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    width: 200px;
+    height: 97vh;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 200px;
+    /* border: 1px solid black; */
+}
+
+.header-content{
+    /* background-color: red; */
+   padding: 10px;
+}
+
+#navi {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    padding: 6px;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+#navi:hover {
+    background-color: #2f9eff;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+#navi.active {
+    background-color: #2f9eff;
+    color:aliceblue;
+    border-radius: 5px;
+}
+.mobile-width-view{
+    display: none;
+}
+
+@media all and (max-width: 900px) {
+    .desktop-view-width {
+        display: none;
+    }
+    .mobile-width-view{
+        position: relative;
+        z-index: 2;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: end;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: #ffffff;
+        overflow-y: scroll;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #menu-bar{
+        border: none;
+        background: none;
+        transition: 0.1s ease-in-out;
+    }
+    #menu-bar:active{
+        border-radius: 4px;
+        background: #d7d7d7c3;
+    }
+    #nav-menu-mobile-view{
+        /* display: none; */
+        text-align: center;
+        /* padding: 10px; */
+        max-height: 0;
+        overflow: hidden;
+        /* transition: max-height 0.3s ease; */
+        /* transition: max-height 0.3s ease; Adjust the duration and timing function as needed */
+    }
+    .show {
+        animation: slideIn 0.3s ease forwards;
+        max-height: 250px;
+    }
+
+    /* opening menu */
+    @keyframes slideIn {
+        to {
+            max-height: 250px;
+        }
+    }
+
+    /* menu link */
+    #navi-mobile{
+        color: rgb(88, 88, 88);
+        text-decoration: none;
+        /* padding-right: 50%; */
+        /* border: 1px solid black; */
+    }
+    #navi-mobile.active {
+        background-color: #2f9eff;
+        padding: 10px;
+        color:aliceblue;
+        border-radius: 5px;
+    }
+    #navi-mobile:active {
+        background-color: #2f9eff;
+        padding: 10px;
+        color:aliceblue;
+        border-radius: 5px;
+    }
+}

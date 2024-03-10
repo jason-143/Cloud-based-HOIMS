@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show and Hide Div</title>
+  <style>
+    /* Optional styling for the div */
+    #myDiv {
+      display: none;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Your content -->
+<h1>Your Page Content</h1>
+
+<!-- The div to be shown and hidden -->
+<div id="myDiv">This div will be shown for a couple of seconds.</div>
+
+<script>
+  // Function to show the div for a couple of seconds
+  function showAndHideDiv() {
+    var myDiv = document.getElementById("myDiv");
+
+    // Show the div
+    myDiv.style.display = "block";
+
+    // Hide the div after 2 seconds (2000 milliseconds)
+    setTimeout(function() {
+      myDiv.style.display = "none";
+    }, 2000);
+  }
+
+  // Call the function when the page loads (you can trigger it in response to a user action)
+  window.onload = showAndHideDiv;
+</script>
+
+</body>
+</html>

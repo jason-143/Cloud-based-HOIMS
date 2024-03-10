@@ -1,0 +1,138 @@
+.flex-body{
+    display: flex;
+}
+.body-content {
+    flex: 1;
+    height: auto;
+    overflow-y: hidden;
+    top: 0;
+    display: flex;
+    /* order: 1px solid bblack; */
+    flex-wrap: wrap;
+    color: rgb(88, 88, 88);
+}
+section{
+    min-height: 50vh;
+    padding-left:50px;
+    padding-right:50px;
+    width: 100%;
+}
+section:nth-child(1){
+    align-items: center;
+
+}
+section:nth-child(2){
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.top-section{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    /* border-bottom: 1px solid black; */
+}
+.status-container{
+    overflow-x:hidden;
+}
+#upload-misc-test-document{
+    padding: 15px;
+    /* border: 1px solid rgb(186, 186, 186); */
+    transition: 0.5s ease-in-out;
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#upload-misc-test-document:hover{
+    background-color: rgb(47, 158, 255);
+    color: aliceblue;
+}
+
+.No-upload-status-sign{
+    position: relative;
+    background-color: rgb(91, 178, 255);
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#welcome{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.add-content{
+    /* background-color: red; */
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+#button-add-record{
+    padding: 50px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    background-color: rgb(47, 158, 255);
+}
+#button-add-record:hover{
+    background-color: rgb(0, 114, 214)
+}
+
+.bottom-section{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto !important;
+    width: 100%;
+    border-top: 1px dashed rgba(9, 30, 66, 0.193);
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+.content-container{
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    margin: 30px;
+    width: 250px;
+    height: 270px;
+    /* background-color: white; */
+    transition: 500ms;
+}
+.content-container:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 500ms;
+}
+/* -- */
+.image-container-xray{
+    background-image: url('../images/home/xray.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}
+.image-container-blood{
+    background-image: url('../images/home/blood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}
+.image-container-urine{
+    background-image: url('../images/home/urine.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+
+}
+
+.imge-top-content{
+    align-items: center;
+    overflow-y: none !important;
+    width: 250px;
+}

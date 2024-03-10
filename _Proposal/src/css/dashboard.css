@@ -1,0 +1,71 @@
+.dashboard-upper-body-contanier{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    /* margin: 20px; */
+    /* border: 1px solid rgb(186, 186, 186); */
+    /* border-radius: 3px; */
+    /* padding: 30px; */
+    color: rgb(88, 88, 88);
+}
+.dahsboard-table{
+    font-size: 15px;
+    width: 100%;
+    /* border-bottom: 1px dashed rgb(186, 186, 186); */
+}
+/* .prog-column-width{
+    overflow-x: auto;
+    
+} */
+/* .overview:hover{
+    border: 1px solid black;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 3px;
+} */
+.other-Document{
+    display: none;
+    height: 50vh;
+    overflow-y: scroll;
+    margin-top: 5px;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(186, 186, 186); */
+}
+#button-Other-doc{
+    /* color: aliceblue; */
+    padding: 5px;
+    border-radius: 4px;
+    color: rgb(88, 88, 88);
+    transition: 0.5s ease-in-out;
+    /* background-color: rgb(47, 158, 255); */
+    /* border: 1px solid rgb(186, 186, 186); */
+}
+#button-Other-doc:hover{
+    color: aliceblue;
+    background-color: rgb(0, 114, 214)
+}
+
+
+.status-color{
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+.status-color:hover{
+    transition: 500ms;
+}
+#green{
+    background-color: rgb(103, 255, 103);
+}
+#red{
+    background-color: rgb(255, 112, 112);
+}
+#orange{
+    background-color: #ffc863;
+}
+
+
+@media all and (max-width: 800px){
+  
+}

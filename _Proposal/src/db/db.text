@@ -1,0 +1,85 @@
+CREATE DATABASE cs_design_project1;
+
+CREATE TABLE `signup`(
+    `id` INT(55) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+
+    `name` VARCHAR(55) NOT NULL,
+    `lastname` VARCHAR(55) NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `UserType` INT(55) NOT NULL,
+    `sex` VARCHAR(55) NULL,
+    `address` VARCHAR(255) NULL,
+    `bday` DATE NULL,
+    `cellno` INT(55) NULL,
+    `email` VARCHAR(55) NULL,
+    
+    `occupation` VARCHAR(255) NULL,
+    `school` VARCHAR(55) NULL,
+    `status` VARCHAR(55) NULL,
+    `Department` VARCHAR(55) NULL,
+    `employee_type` VARCHAR(55) NULL,
+    `Document_upload` BOOLEAN DEFAULT FALSE,
+    `Signup_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO `SignUp` (`id`,`name`,`password`,`UserType`) VALUES ('0', 'ADMIN', '$2y$10$P25r81d7cSjIGujTZpQDJOH2WJ1Gjo.ipN878ADILc5tnU/9u/0Hi',0);
+
+
+CREATE TABLE `Xray`(
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `user_id` int,
+    `doctor_name` VARCHAR(255) NULL,
+    `clinic` VARCHAR(255) NULL,
+    `DateofPayment` VARCHAR(255) NULL,
+    `ORnumber` INT(55) NULL,
+    `Document` VARCHAR(255) NULL,
+    `Upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `expiry_date` DATE DEFAULT LAST_DAY(MAKEDATE(YEAR(CURDATE()) + 1, 1) - INTERVAL 1 DAY);
+    `approval_status` VARCHAR(255) DEFAULT Pending NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `signup` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE `cbc`(
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `user_id` int,
+    `doctor_name` VARCHAR(255) NULL,
+    `clinic` VARCHAR(255) NULL,
+    `DateofPayment` VARCHAR(255) NULL,
+    `ORnumber` INT(55) NULL,
+    `Document` VARCHAR(255) NULL,
+    `Upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `expiry_date` DATE DEFAULT LAST_DAY(MAKEDATE(YEAR(CURDATE()) + 1, 1) - INTERVAL 1 DAY);
+    `approval_status` VARCHAR(255) DEFAULT Pending NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `signup` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE `Urinalysis`(
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `user_id` int,
+    `doctor_name` VARCHAR(255) NULL,
+    `clinic` VARCHAR(255) NULL,
+    `DateofPayment` VARCHAR(255) NULL,
+    `ORnumber` INT(55) NULL,
+    `Document` VARCHAR(255) NULL,
+    `Upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `expiry_date` DATE DEFAULT LAST_DAY(MAKEDATE(YEAR(CURDATE()) + 1, 1) - INTERVAL 1 DAY);
+    `approval_status` VARCHAR(255) DEFAULT Pending NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `signup` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE `misc_test`(
+    `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `user_id` int,
+    `doctor_name` VARCHAR(255) NULL,
+    `clinic` VARCHAR(255) NULL,
+    `DateofPayment` VARCHAR(255) NULL,
+    `ORnumber` INT(55) NULL,
+    `colordiv` VARCHAR(255) NULL,
+    `medical_test_name` VARCHAR(255) NULL,
+    `Document` VARCHAR(255) NULL,
+    `colordiv` VARCHAR(255) NULL,
+    `Upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `expiry_date` DATE DEFAULT LAST_DAY(MAKEDATE(YEAR(CURDATE()) + 1, 1) - INTERVAL 1 DAY);
+    `approval_status` VARCHAR(255) DEFAULT Pending NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `signup` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);

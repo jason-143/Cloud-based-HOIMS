@@ -1,0 +1,120 @@
+
+.reminder-content-container{
+    
+    /* border: 1px solid black; */
+    width: 100%;
+    color: rgb(88, 88, 88);
+    overflow-y: hidden;
+}
+.remider-form-content{
+   padding: 10px;
+    /* border: 1px solid black; */
+}
+
+#xray-message-content,
+#cbc-message-content,
+#urinalysis-message-content{
+    display: none;
+}
+
+.no-upload{
+    /* border: 1px solid black; */
+    padding: 50px;
+    /* border: 1px solid rgb(186, 186, 186); */
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.text-area-message{
+    border-radius: 4px;
+    border: 1px solid rgb(186, 186, 186);
+}
+.send-email-message{
+    border-radius: 4px;
+    padding: 4px;
+    color: aliceblue;
+    background-color: rgb(47, 158, 255);
+    border: 1px solid rgb(186, 186, 186);
+}
+.send-email-message:hover{
+    background-color: rgb(0, 114, 214)
+}
+
+/* 
+    d.php class
+*/
+.download-document-link-button{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    color: aliceblue;
+    font-size: 14px;
+    background-color: rgb(47, 158, 255);
+    /* border: 1px solid rgb(186, 186, 186); */
+    transition: 0.2s ease-in-out;
+}
+.download-document-link-button:hover{
+    background-color: rgb(0, 114, 214)
+}
+.delete-document-link-button{
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    color: aliceblue;
+    /* border: 1px solid rgb(186, 186, 186); */
+    transition: 0.2s ease-in-out;
+    background-color: rgb(255, 112, 112);
+}
+.delete-document-link-button:hover{
+    background-color: rgb(225, 41, 41);
+}
+.approved-document-link-button{
+    padding: 5px;
+    border-radius: 4px;
+    color: aliceblue;
+    border: none;
+    /* border: 1px solid rgb(186, 186, 186); */
+    transition: 0.2s ease-in-out;
+    background-color: rgb(103, 255, 103);
+}
+.approved-document-link-button:hover{
+    background-color: rgb(28, 219, 28);
+}
+.diclined-document-link-button{
+    padding: 5px;
+    border-radius: 4px;
+    color: aliceblue;
+    border: none;
+    /* border: 1px solid rgb(186, 186, 186); */
+    transition: 0.2s ease-in-out;
+    background-color: #ffc863;
+}
+.diclined-document-link-button:hover{
+    background-color: #f2ae31;
+}
+.approval-container{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(119, 113, 113);
+    position: fixed;
+    justify-items: center;
+    justify-self: center;
+    right: 0;
+    bottom: 0;
+    margin: 40px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(186, 186, 186);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+/* email.php */
+
+#message-email{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(186, 186, 186);   
+}

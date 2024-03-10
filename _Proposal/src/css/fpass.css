@@ -1,0 +1,109 @@
+:root {
+    --main-theme: rgb(255, 255, 255);
+    --background-theme: rgb(205, 205, 205);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    ;
+    --display: flex;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: var(--main-theme);
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    top: 8vh;
+    display: var(--display);
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding: 5%;
+}
+
+.login {
+    position: relative;
+    width: 30pc;
+    box-sizing: border-box;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-bottom: 2%;
+}
+
+.temp {
+    position: relative;
+    margin: 0;
+}
+
+#loginform #email {
+    position: relative;
+    width: 15pc;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: aliceblue;
+    border-radius: 5px;
+}
+
+#greet {
+    position: relative;
+    padding-top: 2%;
+    width: 30pc;
+    text-align: center;
+    background-color: rgb(47, 158, 255);
+    color: aliceblue;
+}
+
+#signup {
+    position: relative;
+    font-size: 15px;
+}
+
+#loginform #link {
+    position: relative;
+    background: none;
+    border: 1px solid aliceblue;
+    width: 80px;
+    -webkit-text-fill-color: aliceblue;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+#loginform #link:hover {
+    background: aliceblue;
+    -webkit-text-fill-color: rgb(47, 158, 255);
+}
+
+#title {
+    text-transform: uppercase;
+    bottom: 20px;
+    left: 10px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+#acclink a {
+    padding: 3%;
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#acclink a:hover {
+    text-decoration: underline;
+}
+
+#link-create {
+    border-left: 1px solid aliceblue;
+}

@@ -1,0 +1,61 @@
+# not working with index
+# RewriteEngine On
+# RewriteBase /en/
+
+# #// Redirect to remove .php extension (external)
+# RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# RewriteRule ^ /%1 [NC,L,R]
+
+# #//RewriteRule ^index$ /index.php [L]
+
+# #// Internally add .php extension back
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^ %{REQUEST_URI}.php [L]
+
+
+
+
+
+
+
+
+# Not working with forms
+# // Additional rules or directives can go here
+RewriteEngine On
+RewriteBase /en1/
+
+# Exclude the login page from rewriting
+# RewriteRule ^index\.php$ - [L]
+
+# Redirect to remove .php extension (external)
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+# Internally add .php extension back
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+
+
+
+
+
+
+
+
+
+
+
+# RewriteEngine On
+# RewriteBase /en/
+
+# # Exclude the login page and form processing script from rewriting
+# RewriteRule ^(index|function|urinalysis)\.php$ - [L]
+
+# # Redirect to remove .php extension (external)
+# RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# RewriteRule ^ /%1 [NC,L,R]
+
+# # Internally add .php extension back
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^ %{REQUEST_URI}.php [L]

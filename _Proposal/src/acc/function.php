@@ -79,14 +79,14 @@
 
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+        $mail->Host       = 'smtp server address'; // Your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-        $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+        $mail->Username   = 'something@gmail.com';   // Your SMTP username
+        $mail->Password   = 'smtppassword';   // Your SMTP password
         $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
         $mail->Port       = 465; 
 
-        $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+        $mail->setFrom('something@gmail.com'); // Set the sender's email address and name
         $mail->addAddress($email);// Add a recipient email address
         $mail->isHTML(true);
         $mail->Subject = 'Confirmation Code';

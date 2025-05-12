@@ -250,21 +250,21 @@
                 require __DIR__.'/PHPMailer/src/Exception.php';    
                 $mail = new PHPMailer(true);
                 $mail->isSMTP();
-                $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+                $mail->Host       = 'smtp server address.gmail.com'; // Your SMTP server address
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-                $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+                $mail->Username   = 'username@gmail.com';   // Your SMTP username
+                $mail->Password   = 'password';   // Your SMTP password
                 $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
                 $mail->Port       = 465; 
 
-                $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+                $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
                 $mail->addAddress($email_matched);// Add a recipient email address
                 $mail->isHTML(true);
                 $mail->Subject = 'Password Reset Instructions';
                 $mail->Body    = '<h1>Hello '."$userName".',</h1>
                                     <p>We recently received a request to reset the password for your account</p>
                                     <p>To reset your password, please click on the following link:</p><br>
-                                    <a href="http://localhost/en1/_Proposal/src/acc/passres?id='."$token".'">Click to reset Password</a>
+                                    <a href="http://www.cloud-based-hoims.wuaze.com/src/acc/passres?id='."$token".'">Click to reset Password</a>
                                     <br><br>
                                     <p>this is a one-time use links.</p>
                                     <br><br>
@@ -542,14 +542,14 @@
                             require __DIR__.'/PHPMailer/src/Exception.php';    
                             $mail = new PHPMailer(true);
                             $mail->isSMTP();
-                            $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+                            $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
                             $mail->SMTPAuth   = true;
-                            $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-                            $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+                            $mail->Username   = 'username@gmail.com';   // Your SMTP username
+                            $mail->Password   = 'password';   // Your SMTP password
                             $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
                             $mail->Port       = 465; 
             
-                            $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+                            $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
                             $mail->addAddress($sendEmail);// Add a recipient email address
                             $mail->isHTML(true);
                             $mail->Subject = 'Thank You for Uploading Your Document';
@@ -688,14 +688,14 @@
                         require __DIR__.'/PHPMailer/src/Exception.php';    
                         $mail = new PHPMailer(true);
                         $mail->isSMTP();
-                        $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+                        $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
                         $mail->SMTPAuth   = true;
-                        $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-                        $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+                        $mail->Username   = 'username@gmail.com';   // Your SMTP username
+                        $mail->Password   = 'password';   // Your SMTP password
                         $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
                         $mail->Port       = 465; 
         
-                        $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+                        $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
                         $mail->addAddress($sendEmail);// Add a recipient email address
                         $mail->isHTML(true);
                         $mail->Subject = 'Thank You for Uploading Your Document';
@@ -834,14 +834,14 @@
                         require __DIR__.'/PHPMailer/src/Exception.php';    
                         $mail = new PHPMailer(true);
                         $mail->isSMTP();
-                        $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+                        $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
                         $mail->SMTPAuth   = true;
-                        $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-                        $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+                        $mail->Username   = 'username@gmail.com';   // Your SMTP username
+                        $mail->Password   = 'password';   // Your SMTP password
                         $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
                         $mail->Port       = 465; 
         
-                        $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+                        $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
                         $mail->addAddress($sendEmail);// Add a recipient email address
                         $mail->isHTML(true);
                         $mail->Subject = 'Thank You for Uploading Your Document';
@@ -979,14 +979,14 @@
                         require __DIR__.'/PHPMailer/src/Exception.php';    
                         $mail = new PHPMailer(true);
                         $mail->isSMTP();
-                        $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+                        $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
                         $mail->SMTPAuth   = true;
-                        $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-                        $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+                        $mail->Username   = 'username@gmail.com';   // Your SMTP username
+                        $mail->Password   = 'password';   // Your SMTP password
                         $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
                         $mail->Port       = 465; 
         
-                        $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+                        $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
                         $mail->addAddress($sendEmail);// Add a recipient email address
                         $mail->isHTML(true);
                         $mail->Subject = 'Thank You for Uploading Your Document';
@@ -1058,14 +1058,14 @@
             require_once __DIR__.'/PHPMailer/src/Exception.php';    
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+            $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-            $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+            $mail->Username   = 'username@gmail.com';   // Your SMTP username
+            $mail->Password   = 'password';   // Your SMTP password
             $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
             $mail->Port       = 465; 
 
-            $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+            $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
             $mail->addAddress($email);// Add a recipient email address
             $mail->isHTML(true);
             $mail->Subject = 'Attention required: Upload your Xray document now';
@@ -1118,14 +1118,14 @@
             require_once __DIR__.'/PHPMailer/src/Exception.php';    
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+            $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-            $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+            $mail->Username   = 'username+facebook.com+this.@gmail.com';   // Your SMTP username
+            $mail->Password   = 'password';   // Your SMTP password
             $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
             $mail->Port       = 465; 
 
-            $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+            $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
             $mail->addAddress($email);// Add a recipient email address
             $mail->isHTML(true);
             $mail->Subject = 'Attention required: Upload your CBC document now';
@@ -1182,14 +1182,14 @@
 
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+            $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-            $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+            $mail->Username   = 'username@gmail.com';   // Your SMTP username
+            $mail->Password   = 'password';   // Your SMTP password
             $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
             $mail->Port       = 465; 
 
-            $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+            $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
             $mail->addAddress($email);// Add a recipient email address
             $mail->isHTML(true);
             $mail->Subject = 'Attention required: Upload your CBC document now';
@@ -1227,12 +1227,12 @@
         // Process the form data as needed
         $message = $_POST['message-send-email'];
 
-        // Perform SQL query (adjust your SQL query as needed)
+        // Perform SQL query
         $stmt = mysqli_query($con, "SELECT * FROM `signup` WHERE `email` = '$emailfetch'");
 
         // Check if the query was successful
         if ($stmt) {
-            // Fetch the result (you might need to adjust this based on your database structure)
+            // Fetch the result
             $user = mysqli_fetch_assoc($stmt);
             $email = $user['email'];
 
@@ -1246,14 +1246,14 @@
 
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com'; // Your SMTP server address
+            $mail->Host       = 'smtp address.gmail.com'; // Your SMTP server address
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'j3909292@gmail.com';   // Your SMTP username
-            $mail->Password   = 'nkllbxuxsdxnbdwj';   // Your SMTP password
+            $mail->Username   = 'username@gmail.com';   // Your SMTP username
+            $mail->Password   = 'password';   // Your SMTP password
             $mail->SMTPSecure = 'ssl';             // Enable TLS encryption (ssl also possible)
             $mail->Port       = 465; 
 
-            $mail->setFrom('j3909292@gmail.com'); // Set the sender's email address and name
+            $mail->setFrom('username@gmail.com'); // Set the sender's email address and name
             $mail->addAddress($email);// Add a recipient email address
             $mail->isHTML(true);
             $mail->Subject = 'Uploaded Document';
@@ -1281,5 +1281,7 @@
             echo "Error: " . mysqli_error($con);
         }
     }
-
+    /*
+    under construction_
+    */
 ?>
